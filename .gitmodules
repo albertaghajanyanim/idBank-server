@@ -1,0 +1,3 @@
+[submodule "assets/idbank"]
+	path = assets/idbank
+	url = https://github.com/albertaghajanyanim/idbank-beauty-template.git
