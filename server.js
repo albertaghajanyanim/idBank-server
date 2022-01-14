@@ -1,9 +1,10 @@
+const fs = require('fs');
 const express = require('express');
 const app = express();
 const PORT = 5000;
 
-app.get('/api/addCard', (req, res) => {
-    return await fs.readFile('app/assets/idbank/level1/level2/mobile_payment_en.html', 'utf-8', function (error, data) {
+app.get('/api/addCard', async (req, res) => {
+    return await fs.readFile('/assets/idbank/level1/level2/mobile_payment_en.html', 'utf-8', function (error, data) {
         if (error) {
             return res.end();
         }
@@ -12,6 +13,5 @@ app.get('/api/addCard', (req, res) => {
         return res.end();
     });
 });
-
 
 app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
