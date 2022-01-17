@@ -1,3 +1,5 @@
+### Git clone including submodules
+ - git clone --recurse-submodules -j8 git://github.com/<path>.git
 ### Git submodules
 
 ##### Run command
