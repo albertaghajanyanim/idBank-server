@@ -12,6 +12,8 @@
 - git submodule update --init --recursive
 
 ##### Remove Git submodules
+###### Helpful links
+ - https://riptutorial.com/git/example/2652/removing-a-submodule
 ###### In order to remove a Git submodule from your repository, use the “git submodule deinit” command followed by the “git rm” command and specify the name of the submodule folder.
 
 - git submodule deinit "submodule"
